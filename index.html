@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content=" clean and simple interface to organize your favourite websites">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/Style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- AIOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <!-- AIOS Library ends -->
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html"><div class="mobile-logo"><i class="fa-solid fa-bookmark"></i><h2>BOOK<span>MARK</span></h2></div></a>
+      <nav class="nav navHead">
+        <a href="index.html"><div class="logo"><i class="fa-solid fa-bookmark"></i><h2>BOOK<span>MARK</span></h2></div></a>
+        <div class="nav_menu">
+          <ul>
+            <li><a class="link" href="#feature">Features</a></li>
+            <li><a class="link" href="#pricing">Pricing</a></li>
+            <li class="conthead"><a class="link" href="#contact">Contact</a></li>
+            <button type="button" class="login btn">Login</button>
+          </ul>
+          <div class="icons">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="closeMenu">
+          <i class="fal fa-times"></i>
+        </div>
+      </nav>
+      <div class="menuBars">
+        <i class="fal fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero container">
+      <div class="hero-left" data-aos="fade-right">
+        <h2>A Simple Bookmark Manager</h2>
+        <p class="lead">A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="hero-btn">
+          <button type="button" class="btn">Get it on Chrome</button>
+          <button type="button" class="btn">Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="imgBg"></div>
+        <img src="./Images/illustration-hero.svg" alt="hero-img" data-aos="fade-left">
+      </div>
+    </section>
+
+    <section class="section feature container" id="feature">
+      <div class="feature-head">
+        <div class="title">
+          <h3>Features</h3>
+         <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+      </div>
+
+      <div class="feature-filter">
+        <div class="filters">
+           <div class="filter-btn">
+            <!-- <span class="btn-filter active-filter" data-filter="all">All</span> -->
+            <span onclick="currentSlide(1)" class="btn-filter line-1 active-filter">Simple Bookmarking</span>
+            <span onclick="currentSlide(2)" class="btn-filter line-2">Speedy Searching</span>
+            <span onclick="currentSlide(3)" class="btn-filter">Easy Sharing</span>
+           </div>
+
+           <div class="mix-filter">
+            <div class="imgBg"></div>
+            <div class="feature-tab mix simple"  data-aos="fade-left">
+              <img src="./Images/illustration-features-tab-1.svg" alt="feature-tab-1">
+              <div class="feature-tab-info">
+                <h3>Bookmark in one click</h3>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.</p>
+                  <button type="button" class="btn">More Info</button>
+              </div>
+            </div>
+            <div class="feature-tab mix speedy">
+              <img src="./Images/illustration-features-tab-2.svg" alt="feature-tab-1">
+              <div class="feature-tab-info">
+                <h3>Intelligent search</h3>
+                <p>Our powerful search feature will help you find saved sites in no time at all. 
+                  No need to trawl through all of your bookmarks.</p>
+                  <button type="button" class="btn">More Info</button>
+              </div>
+            </div>
+            <div class="feature-tab mix easy">
+              <img src="./Images/illustration-features-tab-3.svg" alt="feature-tab-1">
+              <div class="feature-tab-info">
+                <h3>Share your bookmarks</h3>
+                <p>Easily share your bookmarks and collections with others. Create a shareable 
+                  link that you can send at the click of a button.</p>
+                  <button type="button" class="btn">More Info</button>
+              </div>
+            </div>
+           </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="section download container">
+      <div class="download-head">
+        <h3>Download the extension</h3>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+      <div class="download-app">
+        <div class="download-box chrome" data-aos="flip-up">
+          <div class="box-description">
+            <img src="./Images/logo-chrome.svg" class="download-img" alt="chrome">
+            <h5>Add to Chrome</h5>
+            <small>Minimum version 62</small>
+            <div class="dots-img">
+              <img src="./Images/bg-dots.svg" alt="dots">
+            </div>
+            <button class="btn download-btn">Add & Install Extension</button>
+          </div>
+        </div>
+        <div class="download-box firefox" data-aos="flip-up">
+          <div class="box-description">
+            <img src="./Images/logo-firefox.svg" class="download-img" alt="firefox">
+            <h5>Add to Firefox</h5>
+            <small>Minimum version 55</small>
+            <div class="dots-img">
+              <img src="./Images/bg-dots.svg" alt="dots">
+            </div>
+            <button class="btn download-btn">Add & Install Extension</button>
+          </div>
+        </div>
+        <div class="download-box opera" data-aos="flip-up">
+          <div class="box-description">
+            <img src="./Images/logo-opera.svg" class="download-img" alt="opera">
+            <h5>Add to Opera</h5>
+            <small>Minimum version 46</small>
+            <div class="dots-img">
+              <img src="./Images/bg-dots.svg" alt="dots">
+            </div>
+            <button class="btn download-btn">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq container">
+      <div class="faq-title">
+        <h3>Frequently Asked Questions</h3>
+        <p>Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.</p>
+      </div>
+      <div class="faq-box">
+        <div class="question-box">
+          <div class="question-title">
+            <h4>What is Bookmark?</h4>
+            <i class="fal fa-chevron-down"></i>
+          </div>
+          <div class="answer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-title">
+            <h4>How can i request a new browser?</h4>
+            <i class="fal fa-chevron-down"></i>
+          </div>
+          <div class="answer">
+            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-title">
+            <h4>Is there a mobile app?</h4>
+            <i class="fal fa-chevron-down"></i>
+          </div>
+          <div class="answer">
+            <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+        <div class="question-box">
+          <div class="question-title">
+            <h4>What about other Chromium browsers?</h4>
+            <i class="fal fa-chevron-down"></i>
+          </div>
+          <div class="answer">
+            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn">More Info</button>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <section class="contactInfo" id="contact">
+          <div class="contact-details">
+            <small class="info">35,000+ ALREADY JOINED</small>
+            <h2>Stay up-to-date with what we're doing</h2>
+            <form action="#" id="form">
+              <label for="email">
+                <input type="email" id="emailInfo" placeholder="Enter your email address" onkeyup="validateEmail()">
+                <span class="errorIcon"><i class="fa-solid fa-exclamation-circle"></i></span>
+                <span class="success"><i class="fa-solid fa-check-circle"></i></span>
+                <span class="error"></span>
+              </label>
+              <button type="submit" class="btn">Contact Us</button>
+            </form>
+          </div>
+        </section>
+        <div class="footer-nav">
+          <nav class="nav-footer">
+          <a href="index.html"><div class="logo"><i class="fa-solid fa-bookmark"></i><h2>BOOK<span>MARK</span></h2></div></a>
+          <div class="nav_menu">
+            <ul>
+              <li><a href="#feature">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="icons">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!--===============AOS SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <script src="./Main/main.js"></script>
+  
+</body>
+</html>
