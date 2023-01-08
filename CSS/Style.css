@@ -235,7 +235,6 @@ header .menuBars:hover{
 }
 .hero-right{
     width: 100%;
-    height: 100%;
 }
 .hero-right .imgBg{
     position: absolute;
@@ -248,10 +247,6 @@ header .menuBars:hover{
     z-index:-1;
 }
 /* feature */
-.feature{
-    margin-top:8rem;
-    margin-bottom: 4rem;
-}
 .feature-head .title,
 .download-head{
     display: flex;
@@ -345,7 +340,7 @@ header .menuBars:hover{
 }
 /* download */
 .download{
-    margin:8rem 0 10rem 0;
+    margin:2rem 0 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,7 +409,7 @@ header .menuBars:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 7rem 0;
+    margin:2rem 0 4rem 0;
 }
 .faq-title{
     display: flex;
@@ -659,11 +654,8 @@ header .nav.active-menu{
         height:20rem;
         bottom:-6rem;
     }
-    .download{
-        margin-top: 7rem;
-    }
     .faq{
-        margin: 7rem 0;
+        margin:3rem 0 5rem 0;
     }
     .filter-btn::before{
         width: 56.5%;
@@ -676,7 +668,7 @@ header .nav.active-menu{
     }
     header .container {
         justify-content:space-between;
-        margin: 0 5rem;
+        margin: 0 3rem;
     }
     header .nav{
         position: absolute;
@@ -789,29 +781,22 @@ header .nav.active-menu{
         margin-top:8rem;
     }
     .hero{
-        flex-direction: column-reverse;
-        gap:5rem;
+        gap:1rem;
     }
     .hero-left{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items:flex-start;
     }
     .hero-left h2 {
-        font-size:37px;
-    }
-    .hero-right img {
-        width:100%;
+        font-size:27px;
     }
     .hero-right .imgBg{
-        width:33rem;
-        height:20rem;
-        transform:translate(0%, 40%);
+        width:15rem;
+        height:8rem;
+        transform:translate(0%, 30%);
     }
-    .feature {
-        margin-top:8rem;
-    }
+    
     .feature-head .title p, .download-head p, .faq-title p {
         width:78%;
     }
@@ -850,30 +835,28 @@ header .nav.active-menu{
         display: none;
     }
     .feature-tab{
-        flex-direction: column;
-        gap:7rem;
+        gap:3rem;
     }
     .feature-tab img{
-        width: 100%;
+        width:280px;
     }
     .feature-tab-info{
-        align-items: center;
-        justify-content: center;
+        align-items:flex-start;
+    }
+    .feature-tab-info p {
+        width:100%;
+        line-height: 1.5;
     }
     .mix-filter .imgBg {
-        width:45rem;
-        height:20rem;
-        bottom:14rem;
-    }
-    .download{
-        margin-top:5rem;
+        width:25rem;
+        height:10rem;
+        bottom:-2rem;
     }
     .download-app {
-        flex-direction: column;
         gap: 2rem;
     }
     .download-box{
-        width:18rem;
+        width:12.5rem;
     }
     .download-btn{
         width:93%;
@@ -919,7 +902,12 @@ header .nav.active-menu{
         margin: 0 1.5rem;
     }
     .hero {
-        margin-bottom:2rem;
+        gap:3rem;
+        flex-direction: column-reverse;
+        margin-bottom:0rem;
+    }
+    .hero-left {
+        align-items:center;
     }
     .hero-btn{
         justify-content: center;
@@ -938,9 +926,9 @@ header .nav.active-menu{
         font-size: 27px;
     }
     .mix-filter .imgBg {
-        width:34rem;
-        height:15rem;
-        bottom:11rem;
+        width:27rem;
+        height:10rem;
+        bottom:13rem;
     }
     .feature-head .title p, 
     .download-head p,
@@ -949,6 +937,7 @@ header .nav.active-menu{
         text-align: center;
     }
     .feature-tab {
+        flex-direction: column;
         gap:6rem;
     }
     .feature-tab-info h3 {
@@ -961,6 +950,12 @@ header .nav.active-menu{
     .opera,
     .firefox{
         margin-top:0;
+    }
+    .download-app{
+        flex-direction: column;
+    }
+    .download-box{
+        width: 16rem;
     }
     .faq{
         margin:2rem 0 7rem 0;
@@ -981,6 +976,9 @@ header .nav.active-menu{
     .contact-details .btn {
         width: 100%;
     }
+    footer::before{
+        height:50vh;
+    }
 }
 @media(max-width:430px){
     header .logo{
@@ -994,7 +992,10 @@ header .nav.active-menu{
         height:14rem;
     }
     .mix-filter .imgBg {
-        width:30rem;
+        width:28rem;
+    }
+    footer::before{
+        height:60vh;
     }
 }
 
@@ -1024,7 +1025,7 @@ header .nav.active-menu{
     }
     
 }
-@media (max-width:325px){
+@media (max-width:362px){
     .faq-box {
         max-width:275px;
     }
@@ -1041,8 +1042,8 @@ header .nav.active-menu{
     }
     .mix-filter .imgBg {
         width:25rem;
-        height:11rem;
-        bottom:16rem;
+        height:9rem;
+        bottom:14rem;
     }
     .download-box {
         width: inherit;
