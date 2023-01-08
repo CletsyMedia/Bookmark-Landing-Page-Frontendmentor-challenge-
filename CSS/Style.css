@@ -485,7 +485,7 @@ footer::before{
     position: absolute;
     content: '';
     width: 100%;
-    height:60px;
+    padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0.7);
     bottom: 0;
     left: 0;
@@ -875,14 +875,14 @@ header .nav.active-menu{
         flex-direction: column;
         margin-bottom:2rem;
     }
-    footer::before{
-        height:60vh;
-    }
     footer .nav_menu ul li{
         padding: 1rem 0;
     }
     .contactInfo{
         margin-bottom: 5rem;
+    }
+    footer::before{
+        padding: 12rem 0;
     }
     footer .icons{
         margin-top:2rem;
@@ -976,9 +976,7 @@ header .nav.active-menu{
     .contact-details .btn {
         width: 100%;
     }
-    footer::before{
-        height:50vh;
-    }
+    
 }
 @media(max-width:430px){
     header .logo{
@@ -993,9 +991,6 @@ header .nav.active-menu{
     }
     .mix-filter .imgBg {
         width:28rem;
-    }
-    footer::before{
-        height:60vh;
     }
 }
 
@@ -1037,13 +1032,14 @@ header .nav.active-menu{
         align-items: center;
     }
     .hero-right .imgBg{
-        width: 15rem;
-        height:10rem;
+        width: 17rem;
+        height:11rem;
+        transform: translate(0, 27%);
     }
     .mix-filter .imgBg {
         width:25rem;
-        height:9rem;
-        bottom:14rem;
+        height:10rem;
+        bottom:12rem;
     }
     .download-box {
         width: inherit;
